@@ -25,8 +25,29 @@
 // }
 // console.log(myObj);
 
-const myFunc = function(){
-console.log("Hey boy");
-}
+// const myFunc = function(){
+// console.log("Hey boy");
+// }
 
-console.log(typeof(myFunc));
+// console.log(typeof(myFunc));
+
+//+++++++++++++++++++++++++++++++++++++++++++++
+
+//Slack(Primitve)     //Heap(Non-primitive)
+
+// let MyChannel  ="imVikram"
+
+// let anotherName = MyChannel
+// anotherName = "ManvikJi"
+// console.log(MyChannel);
+// console.log(anotherName);
+
+// let userOne={
+//     email:"mail@me.com",
+//     name:"vikram"
+// }
+
+// let userTwo = userOne
+// userTwo.email="Manvik@google.com"
+// console.log(userOne.email);
+// console.log(userTwo.email);
