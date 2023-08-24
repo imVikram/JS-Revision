@@ -19,7 +19,7 @@ const Juser={
 // console.log(Juser["email"]);
 // console.log(Juser["fulName"]);
 // console.log(Juser.fulName);
-// console.log(Juser[mySym]);///Syntax of usong symbol
+// console.log(Juser[mySym]);///Syntax of using symbol
 
 // Juser.email="Vikram@yahoo.com"
 // console.log(Juser.email); 
