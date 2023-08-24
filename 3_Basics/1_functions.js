@@ -37,7 +37,39 @@ function loginUser(username="Manvik") {
 }
 //console.log(loginUser("Vikram"));
 
-console.log(loginUser());
+// console.log(loginUser());
+
+
+//Normal function
+// function calculateCartPrice(num1) {
+//     return num1
+    
+// }
+// console.log(calculateCartPrice(2,3,4));///2
+
+//Rest operator
+// function calculateCartPrice(...num1) {
+//     return num1
+    
+// }
+// console.log(calculateCartPrice(2,3,4));///[ 2, 3, 4 ]
+
+function calculateCartPrice(value1, value2, ...num1) {
+    return num1
+    
+}
+// console.log(calculateCartPrice(2,3,4,5));
+
+const user ={
+    username:"Vikram",
+    id:11
+}
+
+function handleObject(anyobject){
+console.log(`user is ${anyobject.username} and price is ${anyobject.id}`);
+}
+
+handleObject(user)
 
 
 
