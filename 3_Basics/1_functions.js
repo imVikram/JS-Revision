@@ -61,12 +61,13 @@ function calculateCartPrice(value1, value2, ...num1) {
 // console.log(calculateCartPrice(2,3,4,5));
 
 const user ={
-    username:"Vikram",
-    id:11
+    username:"Mr. Vikram",
+    price:"7 crore",
+    userCar:"Mercedes"
 }
 
 function handleObject(anyobject){
-console.log(`user is ${anyobject.username} and price is ${anyobject.id}`);
+console.log(`user ${anyobject.username} is driving ${anyobject.userCar} and price is ${anyobject.price}`);
 }
 
 handleObject(user)
