@@ -1,5 +1,8 @@
 //Immediately invoked function expression IIFE
 
+//Syntax
+// (function (){});
+
 // function one() {
 //     console.log(`DB Connected`);
 // }
