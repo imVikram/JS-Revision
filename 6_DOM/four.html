@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | remove elements</title>
+</head>
+<body style="background-color: #212121; color: azure;">
+    <ul class="language">
+        <LI>Javascript</LI>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) {
+        const li =document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Python")
+    addLanguage("typescript")
+
+    function addOptiLang(langName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addOptiLang("C#")
+    addOptiLang("C++")
+
+    //EDIT lang values
+
+    const secondLang = document.querySelector('li:nth-child(2)')
+    //secondLang.innerHTML = "Swift" its not optimize
+
+   const newLi = document.createElement('li')
+   newLi.textContent = "Swift rails"
+   secondLang.replaceWith(newLi)
+
+
+   //Remove element
+
+   const lastElement = document.querySelector('li:last-child')
+   console.log(lastElement);
+   lastElement.remove()
+
+</script>
+</html>
