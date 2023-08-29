@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM | Add new element</title>
+</head>
+<body style="background-color: #212121; color: azure;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">thursday</div>
+        <div class="day">friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
+    </div>
+</body>
+<script>
+   const days= document.querySelector('.parent')
+    // console.log(days);
+    // console.log(days.children);
+    // for (let index = 0; index < days.children.length; index++) {
+    //     console.log(days.children[index].innerHTML);
+    // }
+
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne.parentElement);
+
+    console.log("Nodes", days.childNodes);
+</script>
+</html>

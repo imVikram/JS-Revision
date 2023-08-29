@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM | third</title>
+</head>
+<body style="background-color: #212121; color: azure;">
+    
+</body>
+<script>
+   const divEle =  document.createElement('div')
+   
+   console.log(divEle);
+   divEle.className = "Main"
+   divEle.id = Math.round(Math.random() * 10 + 1)
+   divEle.setAttribute("title", "generated title")
+   divEle.style.backgroundColor = 'Orange'
+   divEle.style.padding = "12px"
+//    divEle.innerText = "My Div"
+    const addText = document.createTextNode("Vikram first node")
+    divEle.appendChild(addText)
+    document.body.appendChild(divEle)
+</script>
+</html>
