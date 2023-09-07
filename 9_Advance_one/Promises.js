@@ -70,26 +70,37 @@
 
 //++++++++++++FIVE+++++++++++
 
-const promiseFive = new Promise(function(resolve, reject){
-    setTimeout(function (){
-        let error = true
-        if (!error) {
-            resolve({
-                userName : 'Vikram Singh',
-                password:123456
-            })
-        }else{
-            reject('Error: Javascript went wrong')
-        }
-    },1000)
-})
+// const promiseFive = new Promise(function(resolve, reject){
+//     setTimeout(function (){
+//         let error = true
+//         if (!error) {
+//             resolve({
+//                 userName : 'Vikram Singh',
+//                 password:123456
+//             })
+//         }else{
+//             reject('Error: Javascript went wrong')
+//         }
+//     },1000)
+// })
 
-async function consumePromiseFive(){
- try {
-    const response = await promiseFive
-    console.log(response);
- } catch (error) {
+// async function consumePromiseFive(){
+//  try {
+//     const response = await promiseFive
+//     console.log(response);
+//  } catch (error) {
+//     console.log(error);
+//  }
+// } 
+// consumePromiseFive()
+
+//=========== FETCH ================
+
+fetch('https://api.github.com/users/imVikram')
+.then((response) => {
+    return response.json()
+}).then((data) => {
+    console.log(data);
+}).catch((error) => {
     console.log(error);
- }
-} 
-consumePromiseFive()
+})
