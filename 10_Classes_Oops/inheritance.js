@@ -20,4 +20,11 @@ class Teacher extends User{
     }
 }
 
-const Vik = Teacher("Vikram singh","Email.com","1234")
+const Vik = new Teacher("Vikram singh","Email.com","1234")
+Vik.addCourse()
+
+const Manvik = new User("Manvik Chaudhary")
+//Manvik.addCourse()
+
+Manvik.logme()
+console.log(Vik===Manvik);//false
